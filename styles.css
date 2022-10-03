@@ -41,7 +41,7 @@ p {
 }
 
 .container {
-    max-width: 1260px;
+    max-width: 1278px;
     margin-left: auto;
     margin-right: auto;
     padding-left: 1.5rem;
@@ -479,5 +479,68 @@ p {
 
     .hero-image {
         width: auto;
+    }
+
+    .card-group {
+        margin-top: 10rem;
+        margin-bottom: 10rem;
+    }
+
+    .card {
+        max-width: none;
+        min-height: 440px;
+        flex-direction: row;
+        align-items: center;
+        padding: 0;
+    }
+
+    .card:first-child,
+    .card:last-child {
+        flex-direction: row-reverse;
+    }
+
+    .card:nth-child(2) .card-image {
+        padding-left: 10%;
+        padding-right: 6%;
+        flex: 1 0 50%;
+        max-width: 50%;
+    }
+
+    .card:nth-child(2) .card-body {
+        padding-right: 2rem;
+        padding-left: 7%;
+        flex: 1 0 50%;
+        max-width: 50%;
+    }
+
+    .card-body,
+    .card-image {
+        max-width: none;
+    }
+
+    .card-body {
+        text-align: left;
+        flex: 1 0 62%;
+        max-width: 62%;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+    .card-image {
+        flex: 1 0 38%;
+        max-width: 38%;
+        margin-bottom: 0;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    .card-title {
+        font-size: 1.75rem;
+        margin-top: 1.125rem;
+        margin-bottom: 0.75rem;
+    }
+
+    .card-text {
+        font-size: 1.125rem;
     }
 }
