@@ -402,3 +402,82 @@ p {
     white-space: nowrap;
     border: 0;
 }
+
+@media (min-width: 992px) {
+    .header {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
+
+    .header .container,
+    .hero-body .container {
+        max-width: 1328px;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+
+    .logo {
+        max-width: 200px;
+    }
+
+    .header-btn {
+        font-size: 0.875rem;
+        width: 200px;
+        padding: 0.625rem 1rem 0.875rem 1rem;
+        box-shadow: 0 0.25rem 0.75rem rgb(0 0 0 / 10%);
+    }
+
+    .hero-section {
+        padding-top: 144px;
+        background-image: url('./images/bg-hero-desktop.svg');
+    }
+
+    .hero-body,
+    .hero-title,
+    .hero-text {
+        max-width: none;
+        text-align: left;
+    }
+
+    .hero-body {
+        padding-top: 1rem;
+        padding-bottom: 4rem;
+    }
+
+    .hero-body .row {
+        display: flex;
+        align-items: center;
+    }
+
+    .hero-body .col:first-child {
+        max-width: 44%;
+        flex: 1 0 44%;
+        padding-right: 2.5rem;
+    }
+
+    .hero-body .col:last-child {
+        max-width: 56%;
+        flex: 1 0 56%;
+    }
+
+    .hero-title {
+        font-size: 2.5rem;
+        margin-top: 0.75rem;
+        margin-bottom: 1.75rem;
+    }
+
+    .hero-text {
+        font-size: 1.125rem;
+    }
+
+    .hero-btn {
+        font-size: 0.875rem;
+        margin-bottom: 0;
+        padding: 1rem;
+        width: 280px;
+    }
+
+    .hero-image {
+        width: auto;
+    }
+}
